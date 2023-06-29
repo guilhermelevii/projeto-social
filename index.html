@@ -39,6 +39,41 @@ Da mesma forma, se você usar valores negativos, como "transform: translate(-50p
 É importante observar que a propriedade "transform: translate" não altera o fluxo do documento, ou seja, não afeta a posição dos outros elementos na página. 
 Ela apenas move o elemento em relação à sua posição original, proporcionando uma animação ou ajuste visual.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No CSS, "transform" é uma propriedade que permite aplicar transformações visuais a um elemento HTML. Essas transformações podem incluir rotação, escala, inclinação (skew) e translação.
+A propriedade "transform" pode ser combinada com várias funções para aplicar diferentes tipos de transformações. Alguns exemplos incluem:
+transform: rotate(angle);: Aplica uma rotação ao elemento, onde "angle" define o ângulo de rotação em graus. Um valor positivo girará o elemento no sentido horário e um valor negativo no sentido anti-horário.
+transform: scale(x, y);: Escala o elemento nos eixos X e Y. O valor "x" define a escala horizontal e "y" define a escala vertical. Um valor de 1 mantém o tamanho original, valores maiores que 1 aumentam o tamanho e valores entre 0 e 1 diminuem o tamanho.
+transform: skew(x-angle, y-angle);: Inclina o elemento ao longo dos eixos X e Y. Os ângulos "x-angle" e "y-angle" definem a inclinação em graus. Um valor positivo inclina para a direita e um valor negativo inclina para a esquerda.
+transform: translate(x, y);: Move o elemento em relação à sua posição original. O valor "x" define o deslocamento horizontal e "y" define o deslocamento vertical. Valores positivos movem o elemento para a direita e para baixo, enquanto valores negativos movem para a esquerda e para cima.
+Esses são apenas alguns exemplos das transformações disponíveis com a propriedade "transform". Ela oferece flexibilidade para criar efeitos visuais interessantes e animações no CSS.
+
+-----------------------------------------------------------------------------------------
+
+transition: <propriedades> <duração> <tempo> <atraso>;
+
+
+<propriedades>: especifica as propriedades CSS que devem ter a transição suave. Você pode listar várias propriedades separadas por vírgulas, ou usar "all" para aplicar a transição em todas as propriedades.
+
+<duração>: especifica a duração da transição em segundos (s) ou milissegundos (ms). Por exemplo, 0.5s para meio segundo ou 1000ms para um segundo.
+
+<tempo> (opcional): define a curva de tempo que controla como a transição é animada. Existem várias funções disponíveis, como "linear" (transição linear), "ease" (transição suave), "ease-in" (início suave), "ease-out" (final suave) e "ease-in-out" (início e final suaves).
+
+<atraso> (opcional): especifica um atraso antes que a transição comece. Pode ser definido em segundos (s) ou milissegundos (ms).
+
+  
+  .elemento {
+  transition: background-color 0.3s ease;
+}
+
+.elemento:hover {
+  background-color: red;
+}
+
+Nesse exemplo, quando o mouse é passado sobre o elemento, a cor de fundo mudará para vermelho suavemente em 0,3 segundos, devido à transição definida pela propriedade "transition".
+ Isso proporciona uma animação fluida e agradável ao usuário durante a alteração de estilo.
+
 -->
   </head>
   <body>
@@ -51,20 +86,20 @@ Ela apenas move o elemento em relação à sua posição original, proporcionand
 
       <section id="redes-sociais">
         <a href="#" target="tela"
-          ><img src="imagens/logo-home.jpg" alt="Home"
-        /></a><br>
+          ><img src="imagens/logo-home.jpg" alt="Home" /></a
+        ><br />
         <a href="#" target="tela"
-          ><img src="imagens/logo-youtube.jpg" alt="Youtube"
-        /></a><br>
+          ><img src="imagens/logo-youtube.jpg" alt="Youtube" /></a
+        ><br />
         <a href="#" target="tela"
-          ><img src="imagens/logo-github.jpg" alt="Github"
-        /></a><br>
+          ><img src="imagens/logo-github.jpg" alt="Github" /></a
+        ><br />
         <a href="#" target="tela"
-          ><img src="imagens/logo-instagram.jpg" alt="Instagram"
-        /></a><br>
+          ><img src="imagens/logo-instagram.jpg" alt="Instagram" /></a
+        ><br />
         <a href="#" target="tela"
-          ><img src="imagens/logo-twitter.jpg" alt="Twitter"
-        /></a><br>
+          ><img src="imagens/logo-twitter.jpg" alt="Twitter" /></a
+        ><br />
         <a href="#" target="tela"
           ><img src="imagens/logo-facebook.jpg" alt="Facebook"
         /></a>
