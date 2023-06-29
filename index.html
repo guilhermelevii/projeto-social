@@ -13,10 +13,31 @@
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
-
+--------------------------------------------------------------------------------------------------------
+    
     Em resumo, "position: absolute;" permite controlar a posição de um elemento de forma
     precisa e independente de outros elementos na página, tornando-o útil para layouts 
     complexos e personalizados.
+
+-----------------------------------------------------------------------------------------------------
+EXEMPLO UTILIZADO NO CSS DESSA PAGINA:
+
+section#redes-sociais img:hover{
+  border: 2px solid rgba(255, 255, 255, 0.603);
+  transform: translate(-3px,10px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+  transition: transform 0.6s, border 1s;
+}
+
+
+"Transform: translate" é uma propriedade CSS que permite mover um elemento em relação à sua posição original. Ela faz parte 
+das transformações 2D disponíveis no CSS e é comumente usada para alterar a posição de um elemento na tela.
+A propriedade "translate" aceita dois valores: um para o deslocamento horizontal (X) e outro para o deslocamento vertical (Y). 
+Ao aplicar "transform: translate(X, Y)" a um elemento, ele será movido na direção especificada em relação à sua posição original.
+Por exemplo, se você usar "transform: translate(50px, 100px)", o elemento será movido 50 pixels para a direita e 100 pixels para baixo em relação à sua posição original.
+Da mesma forma, se você usar valores negativos, como "transform: translate(-50px, -100px)", o elemento será movido para a esquerda e para cima.
+É importante observar que a propriedade "transform: translate" não altera o fluxo do documento, ou seja, não afeta a posição dos outros elementos na página. 
+Ela apenas move o elemento em relação à sua posição original, proporcionando uma animação ou ajuste visual.
 
 -->
   </head>
